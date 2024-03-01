@@ -5,8 +5,6 @@ Definition
 A representative for an identity. MAY require the use of a wallet. MAY support transfer.
 identitywallet
 
- Testing [KERIA](keria) Kerific Glossary Lookup
-
 ### KERIA Agent
 KERIAAgent
 
