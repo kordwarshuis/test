@@ -17,4 +17,4 @@ jobs:
 
   call-action2:
     needs: call-action1
-    uses: ../.github/workflows/test2.yml
+    uses: ./.github/workflows/test2.yml
