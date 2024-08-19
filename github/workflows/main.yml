@@ -1,0 +1,20 @@
+name: Import all and Deploy to GitHub Pages
+
+on:
+  # A: Triggered on push to the main branch:
+  # push:
+  #   branches:
+  #     - main
+
+  # B: Triggered on manual workflow dispatch:
+  workflow_dispatch:
+
+  ## C: Triggered on Wiki changes:
+  # gollum
+jobs:
+  call-action1:
+    uses: ./.github/workflows/test1.yml
+
+  call-action2:
+    needs: call-action1
+    uses: ../.github/workflows/test2.yml

@@ -1,0 +1,14 @@
+name: test2
+
+on:
+  push:
+  workflow_call:
+
+jobs:
+  test2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run test script 2
+        run: |
+          echo 'test 2'
